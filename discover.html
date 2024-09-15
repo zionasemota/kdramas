@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>kdramas.org</title>
+  <meta name="author" content="Zion Asemota">
+  <meta name="description" content="A website that informs people about what k-dramas are">
+  <meta name = "viewport" content="width = device-width, initial-scale = 0.41, maximum-scale=1">
+  <link rel="stylesheet" href="css/discover.css">
+
+
+  <!-- imported fonts from google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div id = "nav">
+    <a href = "#header-section" class = "navbar-brand" height = 25%>kdramas.org</a>
+    <a class = "nav-item" href = "testimonials.html">TESTIMONIALS</a>
+    <a class = "nav-item" href = "discover.html">DISCOVER</a>
+    <a class = "nav-item" href = "home.html">HOME</a>
+
+  </div>
+
+  <div class = "page-content">
+
+    <!-- Header Section -->
+
+    <header id = "header-section">
+
+      <div class = "container column">
+
+        <h1>K-DRAMAS</h1>
+        <p id = "descriptionText">aka korean dramas</p>
+
+
+      </div>
+
+
+    </header>
+
+
+    <!--K-Drama Genres section -->
+    <section id = "genres-section" class = "container column">
+      <h2>K-DRAMA GENRES</h2>
+
+      <div class = "container row">
+
+        <iframe src="https://www.youtube.com/embed/ViSCLWF_0I4"></iframe>
+        <ul id = "genre-list">
+          <li>Romance</li>
+          <li>Historical</li>
+          <li>Action</li>
+          <li>Comedy</li>
+          <li>Melodrama</li>
+          <li>Thriller</li>
+          <li>Supernatural</li>
+          <li>Psychological</li>
+        </ul>
+
+
+
+
+
+      </div>
+
+    </section>
+
+
+    <!--K-Drama OST section -->
+    <section id = "ost-section" class = "container column">
+
+
+      <h2>POPULAR K-DRAMA OST</h2>
+      <h4 id = "musicText">Click button on music box to play an OST</h4>
+
+      <!-- Custom Music Box based on my sketch using div's-->
+      <div id = "box-exterior">
+
+        <div id = "box-interior">
+
+          <img class="center" src = "images/discover page/waveGif.gif" alt = "wave icon" />
+
+        </div>
+
+        <div id = "songIDs" class="container row">
+
+          <div id = "col1" class = "container column">
+            <button id = "button1" onclick = "playMusic('sounds/sunset.mp3'); changeText('Currently Playing: Sunset From Crash Landing On You')">1</button>
+            <button id = "button4" onclick = "playMusic('sounds/Again Spring.mp3'); changeText('Currently Playing: Again Spring From Welcome')">4</button>
+            <button id = "button7" onclick = "playMusic('sounds/in silence.mp3'); changeText('Currently Playing: In Silence From Its Okay To Not Be Okay')">7</button>
+          </div>
+
+          <div id = "col2" class = "container column">
+            <button id = "button2" onclick = "playMusic('sounds/start-gaho.mp3'); changeText('Currently Playing: Start From Itaewon Class')">2</button>
+            <button id = "button5" onclick = "playMusic('sounds/Here I Am Again.mp3'); changeText('Currently Playing: Here I Am Again From Crash Landing On You')">5</button>
+            <button id = "button8" onclick = "playMusic('sounds/stay with me.mp3'); changeText('Currently Playing: Stay With Me From Goblin')">8</button>
+          </div>
+
+          <div id = "col3" class="container column">
+            <button id = "button3" onclick = "playMusic('sounds/Please Dont Cry.mp3'); changeText('Currently Playing: Please Dont Cry From King Eternal Monarch')">3</button>
+            <button id = "button6" onclick = "playMusic('sounds/Pentagon.mp3'); changeText('Currently Playing: Pentagon From Twenty-Twenty')">6</button>
+            <button id = "button9" onclick = "playMusic('sounds/everytime.mp3'); changeText('Currently Playing: Everytime From Descendants of the Sun')">9</button>
+          </div>
+
+
+        </div>
+
+        <button id = "stopMusic" onclick="stopMusic(); changeText('Click button on music box to play an OST')">STOP</button>
+
+      </div>
+
+
+
+
+
+    </section>
+
+    <!--Top Actors and Actresses of 2021 Section-->
+    <section id = "topActors-section" class="container-column">
+
+      <h2>TOP ACTORS AND ACTRESSES OF 2021</h2>
+      <h3>ACTORS</h3>
+
+      <div class = "container row" id = "actors">
+
+        <div class = "container column">
+          <img src = "images/discover page/hwang in yeop.jpeg" class = "circledImages"/>
+          <p>HWANG IN YEOP</p>
+        </div>
+
+        <div class = "container column">
+          <img src = "images/discover page/song kang.jpeg" class = "circledImages"/>
+          <p>SONG KANG</p>
+        </div>
+
+        <div class = "container column">
+          <img src = "images/discover page/lee do hyun.jpeg" class = "circledImages"/>
+          <p>LEE DO HYUN</p>
+        </div>
+
+        <div class = "container column">
+          <img src = "images/discover page/Yoo Jung Woo.jpeg" class = "circledImages"/>
+          <p>YOO JUNG WOO</p>
+        </div>
+
+
+      </div>
+
+      <h3>ACTRESSES</h3>
+
+      <div class = "container row" id = "actresses">
+
+        <div class = "container column">
+          <img src = "images/discover page/IU.jpeg" class = "circledImages"/>
+          <p>IU</p>
+        </div>
+
+        <div class = "container column">
+          <img src = "images/discover page/Son Ye Jin.jpeg" class = "circledImages"/>
+          <p>SON YE JIN</p>
+        </div>
+
+        <div class = "container column">
+          <img src = "images/discover page/Bae Suzy.png" class = "circledImages"/>
+          <p>BAE SUZY</p>
+        </div>
+
+        <div class = "container column">
+          <img src = "images/discover page/Park Bo Young.jpeg" class = "circledImages"/>
+          <p>PARK BO YOUNG</p>
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    <section id = "topDramas-section" class = "container column">
+      <div class = "container column" id = "topDramas-heading">
+      <h2>TOP K-DRAMAS</h2>
+    </div>
+      <div class = "container column" id = "topDramas-content">
+        <h3>5 Highest Rated K-Dramas Of All Time</h3>
+        <table class="kdramas-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Drama</th>
+              <th>Best</th>
+              <th>Channel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>The World of The Married</td>
+              <td>47.20%</td>
+              <td>JTBC</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sky Castle</td>
+              <td>36.3%</td>
+              <td>JTBC</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Crash Landing On You</td>
+              <td>34.1%</td>
+              <td>tvN</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Goblin</td>
+              <td>31.5%</td>
+              <td>tvN</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Reply 1988</td>
+              <td>31.12%</td>
+              <td>tvN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class = "container row" id="topDramas-images">
+
+        <img src = "images/discover page/world of the married.jpg" alt = "world of the married cover"/>
+        <img src = "images/discover page/sky castle.jpeg" alt = "sky castle cover"/>
+        <img src = "images/discover page/CLOY.jpg" alt = "CLOY cover"/>
+        <img src = "images/discover page/goblin.jpeg" alt = "Goblin cover"/>
+        <img src = "images/discover page/reply 1988.jpg" alt = "Reply 1988 cover"/>
+
+
+      </div>
+
+    </section>
+
+    <footer id = "footer-section" class="container column">
+
+      <p>
+        <a href = "https://www.linkedin.com/in/zion-asemota/" target="_blank">LinkedIn</a> | <a href = "https://github.com/zionasemota" target="_blank">Github</a> | <a href = "mailto:zasemota@gmail.com">Email</a>
+      </p>
+
+      <p>Coded by Zion with ♡ 2021</p>
+
+    </footer>
+
+  </div>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script type = "text/javascript" src = "scripts/discover.js"></script>
+
+</body>
+</html>
